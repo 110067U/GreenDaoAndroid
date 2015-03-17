@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightGray">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="goblingreen">#13a89e</color>
+    <color name="grey">#dddddd</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#d8d9dd</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="action_bar">#33B5E5</color>
+    <color name="background">#f3f4f6</color>
+</resources>

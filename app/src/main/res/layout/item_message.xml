@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/background"
+    android:padding="6dp">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:id="@+id/boxItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+             <!--Left Pane-->
+             <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                    <!--Icon-->
+                    <ImageView
+                        android:id="@+id/imgIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                         android:id="@+id/txtCampus"
+                         android:text="Campus:"
+                         android:textSize="8sp"
+                         android:layout_width="match_parent"
+                         android:layout_height="22dp" />
+
+                    <TextView
+                         android:id="@+id/txtRoom"
+                         android:text="Room:"
+                         android:textSize="8sp"
+                         android:layout_width="match_parent"
+                         android:layout_height="22dp" />
+
+                    <TextView
+                         android:id="@+id/txtCreatedBy"
+                         android:text="Created By:"
+                         android:textSize="8sp"
+                         android:layout_width="match_parent"
+                         android:layout_height="22dp" />
+
+                    <TextView
+                         android:id="@+id/txtCreatedDate"
+                         android:text="Created Date:"
+                         android:textSize="8sp"
+                         android:layout_width="match_parent"
+                         android:layout_height="22dp" />
+
+                    <TextView
+                         android:id="@+id/txtDateSent"
+                         android:text="Date Sent:"
+                         android:textSize="8sp"
+                         android:layout_width="match_parent"
+                         android:layout_height="22dp" />
+
+                    <TextView
+                         android:id="@+id/txtStatus"
+                         android:text="Status:"
+                         android:textSize="8sp"
+                         android:layout_width="match_parent"
+                         android:layout_height="22dp" />
+
+                    <!--ButtonLayout-->
+                    <LinearLayout
+                        android:id="@+id/layoutEditButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/pencil"
+                            android:scaleType="fitXY"/>
+
+                        <Button
+                            android:id="@+id/btnEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Edit &amp; View"
+                            android:textSize="10sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_button_rounded_corner"/>
+
+                    </LinearLayout>
+
+             </LinearLayout>
+
+             <!--Divider-->
+             <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                 android:background="@color/grey"
+                 android:padding="0dp"/>
+
+
+            <!--Message Body-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <!--Receiver List-->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="2">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+
+                        <HorizontalScrollView
+                            android:id="@+id/parentLayoutOuter"
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/parentLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                    </TableRow>
+                </TableLayout>
+
+
+                <!--Text Body-->
+                <TextView
+                    android:id="@+id/txtMsgBody"
+                    android:text="Message Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/goblingreen"/>
+
+                <!--Image Attachments Grid-->
+                <GridLayout
+                    android:id="@+id/gridAttachments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey">
+                </GridLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

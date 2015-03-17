@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="parentapp.oac.com.greendaoforandroidstudio.ui.activity.MessageListActivity">
+
+    <item
+        android:id="@+id/add_item"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_add_item" />
+
+    <item
+        android:id="@+id/delete_items"
+        android:icon="@drawable/ic_action_discard"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_delete_items" />
+
+</menu>
